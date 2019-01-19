@@ -1,0 +1,97 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: normal;
+	color: #ffffff;
+
+
+	background-color: #849d8f;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Универсальный класс 
+для скрытых эл-тов */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	-webkit-clip-path: inset(100%);
+
+			clip-path: inset(100%);
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+}
+
+ul {
+	list-style: none; 
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #ffffff;
+}
+
+.container {
+	padding: 0 27px;
+	margin: 0 auto;
+	width: 1146px;
+}
+
+.main-navigation {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+}
+
+.site-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	
+	width: 600px;
+}
+
+.catalog {
+	position: relative;
+	padding-bottom: 6px;
+}
+
+.submenu {
+	position: absolute;
+	/*left: 6px;*/
+	top: 20px;
+	margin: 0;
+	padding: 0;
+	width: 143px;
+	z-index: 1;
+}
+
+.submenu {
+	display: none;
+}
+
+.site-navigation:hover .submenu {
+	display: block;
+}
