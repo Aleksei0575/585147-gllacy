@@ -70,12 +70,22 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	
-	width: 600px;
+	width: 724px;
+}
+
+.site-navigation a {
+	border-bottom: 1px solid #9fb3a8;
+}
+
+.site-logo {
+	margin-top: 9px;
+	margin-right: 24px;
 }
 
 .catalog {
 	position: relative;
-	padding-bottom: 6px;
+	margin-right: 27px;
+	/*padding-bottom: 6px;*/
 }
 
 .submenu {
@@ -92,6 +102,129 @@ a {
 	display: none;
 }
 
-.site-navigation:hover .submenu {
+.site-navigation-item:hover .submenu {
+	display: block;
+}
+
+.delivery-pay {
+	margin-right: 27px;
+}
+
+.user-navigation {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	
+	width: 250px;
+}
+
+.catalog-btn:hover {
+	position: relative;
+	display: inline-block;
+
+	padding-top: 7px;
+	padding-right: 14px;
+	padding-bottom: 7px;
+	padding-left: 14px;
+	min-width: 60px;
+	border-radius: 50px;
+
+	text-align: center;
+	vertical-align: middle;
+	z-index: 20;
+	color: #323232;
+	background-color: #f7f6f3;
+}
+
+.btn-search {
+	display: inline-block;
+
+	padding-top: 6px;
+	padding-right: 8px;
+	padding-bottom: 6px;
+	padding-left: 8px;
+	min-width: 18px;
+	border-radius: 50%;
+
+	/*text-align: center;
+	vertical-align: middle;*/
+
+	background-color: #a0b4a9;
+}
+
+.btn-login {
+	display: inline-block;
+
+	padding-top: 6px;
+	padding-right: 16px;
+	padding-bottom: 6px;
+	padding-left: 16px;
+	min-width: 61px;
+	border-radius: 50px;
+
+	text-align: center;
+	vertical-align: middle;
+
+	background-color: #a0b4a9;
+}
+
+.btn-cart {
+	position: relative;
+	display: inline-block;
+
+	padding-top: 6px;
+	padding-right: 17px;
+	padding-bottom: 6px;
+	padding-left: 14px;
+	min-width: 67px;
+	border-radius: 50px;
+
+	text-align: center;
+	vertical-align: middle;
+
+	background-color: #a0b4a9;
+}
+
+.user-search,
+.user-login {
+	position: relative;
+}
+
+.user-login,
+.user-cart {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.search-form {
+	position: absolute;
+	left: -165px;
+	top: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.search-form {
+	display: none;
+}
+
+.user-search:hover .search-form {
+	display: block;
+}
+
+.login-form {
+	position: absolute;
+	left: -165px;
+	top: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.login-form {
+	display: none;
+}
+
+.user-login:hover .login-form {
 	display: block;
 }
