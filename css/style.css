@@ -132,6 +132,10 @@ a {
 	/* border-bottom-left-radius: 14px; */
 }
 
+.catalog:hover {
+	border-style: none;
+}
+
 .main-navigation {
 	display: flex;
 	flex-wrap: wrap;
@@ -280,6 +284,10 @@ a {
 	/* border-bottom-left-radius: 14px; */
 }
 
+.delivery-pay:hover {
+	border-style: none;
+}
+
 .about-company {
 	position: relative;
 	display: inline-block;
@@ -315,6 +323,10 @@ a {
 	/* border-top-right-radius: 14px; */
 	/* border-bottom-right-radius: 14px; */
 	/* border-bottom-left-radius: 14px; */
+}
+
+.about-company:hover {
+	border-style: none;
 }
 
 .user-navigation {
