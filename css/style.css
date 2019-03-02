@@ -317,35 +317,6 @@ a {
 	/* border-bottom-left-radius: 14px; */
 }
 
-.about-company {
-	/*position: relative;
-	display: inline-block;*/
-	/*margin-top: 5px;*/
-	/*margin-left: -4px;*/
-	/*padding-top: 22px;
-	padding-bottom: 18px;
-	min-height: 18px;
-	vertical-align: top;*/
-}
-
-/*.site-navigation-link {
-	padding-top: 7px;
-	padding-right: 15px; 
-	padding-bottom: 1px;
-	padding-left: 15px; 
-	margin-right: 14px;
-	margin-left: 15px;
-	border-bottom: 1px solid #9fb3a8;
-}*/
-
-/*.delivery-pay a {
-	margin-left: 14px;
-}
-
-.about-company a {
-	margin-left: 14px;
-}*/
-
 .user-navigation {
 	display: flex;
 	justify-content: flex-start;
@@ -364,60 +335,6 @@ a {
 	margin: 0;
 	padding: 0;
 }
-
-/*.catalog-btn:hover a {
-	position: relative;
-	display: inline-block;
-
-	padding-top: 7px;
-	padding-right: 15px;
-	padding-bottom: 7px;
-	padding-left: 15px;
-	min-width: 18px;
-	border-radius: 50px;
-
-	text-align: center;
-	vertical-align: middle;
-	z-index: 20;
-	color: #323232;
-	background-color: #f7f6f3;
-}*/
-
-/*.delivery-btn:hover a {
-	position: relative;
-	display: inline-block;
-
-	padding-top: 7px;
-	padding-right: 15px;
-	padding-bottom: 7px;
-	padding-left: 15px;
-	min-width: 18px;
-	border-radius: 50px;
-	
-	text-align: center;
-	vertical-align: middle;
-	
-	color: #323232;
-	background-color: #f7f6f3;
-}*/
-
-/*.company-btn:hover a {
-	position: relative;
-	display: inline-block;
-
-	padding-top: 7px;
-	padding-right: 15px;
-	padding-bottom: 7px;
-	padding-left: 15px;
-	min-width: 18px;
-	border-radius: 50px;
-	
-	text-align: center;
-	vertical-align: middle;
-	
-	color: #323232;
-	background-color: #f7f6f3;
-}*/
 
 .btn-search {
 	display: inline-block;
@@ -539,7 +456,7 @@ a {
 	padding-left: 30px;
 }
 
-.contact-block {
+.user-contact-block {
 	display: flex;
 	justify-content: flex-end;
 	flex-wrap: wrap;
