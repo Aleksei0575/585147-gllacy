@@ -62,7 +62,7 @@
 							</a>
 							<form class="search-form" method="GET" action="https://echo.htmlacademy.ru"><!--Форма поиска-->
 								<label class="visually-hidden" for="user-search">Поиск</label>
-								<input id="user-search" type="text" name="search" placeholder="Что ищем?">
+								<input class="search" id="user-search" type="text" name="search" placeholder="Что ищем?">
 								<button class="visually-hidden" type="submit" value="">
 									Найти
 								</button>
@@ -85,16 +85,18 @@
 								<form class="user-data" action="https://echo.htmlacademy.ru" method="POST">
 									<div class="login-email">
 										<label for="email" class="visually-hidden">Ваш e-mail:</label>
-										<input id="email" type="email" value="" name="email" placeholder="Электронная почта">
+										<input class="user-email" id="email" type="email" value="" name="email" placeholder="Электронная почта">
 									</div>
 									<div class="login-password">
 										<label for="user-pass" class="visually-hidden">Введите пароль</label>
-										<input id="user-pass" type="password" value="" name="password" placeholder="Введите пароль">
+										<input class="user-pass" id="user-pass" type="password" value="" name="password" placeholder="Пароль">
 									</div>
 									<div class="login-link">
-										<button class="login-button btn" type="submit" value="">Войти</button>
-										<a href="#">Забыли пароль?</a>
-										<a href="#">Новая регистрация</a>
+										<button class="login-button button" type="submit" value="">Войти</button>
+										<p class="link-wrapper">
+											<a href="#">Забыли пароль?</a>
+											<a href="#">Новая регистрация</a>
+										</p>
 									</div>
 								</form>
 							</div><!--Форма входа - конец-->
@@ -292,7 +294,7 @@
 						<form class="subscription-form" action="https://echo.htmlacademy.ru" method="POST">
 							<label for="user-email" class="visually-hidden">Ваш e-mail:</label>
 							<input id="user-email" type="email" value="" name="email" placeholder="Электронная почта">
-							<button class="subscription-button btn" type="submit" value="">Отправить
+							<button class="subscription-button button" type="submit" value="">Отправить
 							</button>
 						</form>
 					</div>
