@@ -6,9 +6,6 @@ body {
 	line-height: 22px;
 	font-weight: normal;
 	color: #ffffff;
-
-
-	background-color: #849d8f;
 }
 
 a {
@@ -50,6 +47,30 @@ input[type="radio"].visually-hidden {
 
 a {
 	color: #ffffff;
+}
+
+.site-wrapper {
+	background-color: #849d8f;
+	background-image: url("../img/img-slide1.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	
+	transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper::before,
+.site-wrapper::after {
+	content: "";
+
+	visibility: hidden;
+}
+
+.site-wrapper::before {
+	background-image: url("../img/img-slide2.png");
+}
+
+.site-wrapper::after {
+	background-image: url("../img/img-slide2.png");
 }
 
 .container {
@@ -135,6 +156,7 @@ a {
 	flex-grow: 1;
 }
 
+/*Выпадающее меню*/
 .site-navigation .submenu {
 	position: absolute;
 	width: 143px;
@@ -152,12 +174,12 @@ a {
 	z-index: 5;
 }
 
+/*Стили выпадающего меню*/
 .submenu-item:first-child {
 	padding-top: 10px;
 	padding-right: 19px;
 	padding-bottom: 11px;
 	padding-left: 19px;
-	
 }
 
 .submenu-item:first-child a {
@@ -165,8 +187,6 @@ a {
 	line-height: 16px;
 	font-weight: bold;
 	color: #323232;
-	/*width: 128px;*/
-	/*border-bottom: 1px solid #d1d0ce;*/
 }
 
 .line {
@@ -174,7 +194,6 @@ a {
 	margin-left: 6px;
 	height: 1px;
 	background: #d1d0ce;
-	/*margin-bottom: 8px;*/
 }
 
 .submenu-item:nth-child(3) {
@@ -226,10 +245,6 @@ a {
 	background-color: #fbded7;
 }
 
-.submenu {
-	display: none;
-}
-
 .submenu-item a {
 	font-size: 14px;
 	line-height: 16px;
@@ -237,13 +252,17 @@ a {
 	color: #323232;
 	list-style: none;
 }
+/*Стили выпадающего меню - конец*/
+.submenu {
+	display: none;
+}
 
 .site-navigation-item:hover .submenu,
 .site-navigation-item:focus .submenu {
 	display: block;
-	
 }
 
+/*Стили пунктов меню*/
 .delivery-pay {
 	position: relative;
 	display: inline-block;
@@ -328,6 +347,7 @@ a {
 	border-style: none;
 }
 
+/*Блок пользовательской навигации*/
 .user-navigation {
 	display: flex;
 	justify-content: flex-start;
@@ -426,6 +446,7 @@ a {
 	padding-left: 25px;
 }
 
+/*Форма поиска*/
 .search-form {
 	position: absolute;
 	width: 341px;
@@ -495,6 +516,7 @@ a {
 	display: block;
 }
 
+/*Фома входа в личный кабинет*/
 .login-form {
 	position: absolute;
 	width: 277px;
@@ -558,8 +580,10 @@ a {
 	color: #fefefe;
 	border-radius: 20px;
 	
-	box-shadow: 0px 1px 2px 0 #ac1000;
-	background-image: linear-gradient(to top, #e74a35, #f26843);
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+	background-color: #ac1000;
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
 }
 
 .login-button {
@@ -591,6 +615,7 @@ a {
 	color: #323232;
 	text-decoration: underline;
 }
+/*Форма входа - конец*/
 
 .login-form {
 	display: none;
@@ -658,6 +683,121 @@ a {
 	font-weight: 700;
 }
 
-/*.contact-phone a {
+/*Основной контент*/
+.slider {
+	position: relative;
+
+	padding-top: 321px;
+
+	text-align: center;
+	color: #ffffff;
+}
+
+.slider-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.slide {
+	display: none;
+}
+
+.slide-title {
+	width: 700px;
+	margin: 0 auto;
+	margin-top: -46px;
+	margin-bottom: 28px;
+
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 800;
+}
+
+.slider-item .button {
 	display: inline-block;
-}*/
+	padding: 12px 44px;
+
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 44px;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: top;
+	text-decoration: none;
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+	background: rgba(172, 16, 0, 0.64);
+	background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+	border-radius: 50px;
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	border: none;
+
+	cursor: pointer;
+}
+
+.slider-item .button:hover {
+	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slider-item .button:active {
+	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slider-controls {
+	position: absolute;
+	bottom: 23px;
+	left: 0;
+	z-index: 20;
+	
+	font-size: 0;
+}
+
+.slider-controls label {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right: 8px;
+
+	vertical-align: top;
+
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+/*Управление слайдером*/
+/*Меняем описание*/
+#btn-1:checked ~ .site-wrapper #slide1,
+#btn-2:checked ~ .site-wrapper #slide2,
+#btn-3:checked ~ .site-wrapper #slide3 {
+	display: block;
+}
+
+/*Выделение управляющей кнопки*/
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+	background-color: #ffffff;
+}
+
+/*Меняем фон в зависимости от
+ нажатой кнопки*/
+#btn-1:checked ~ .site-wrapper {
+	background-color: #849d8f;
+	background-image: url("../img/img-slide1.png");
+}
+
+#btn-2:checked ~ .site-wrapper {
+	background-color: #8996a6;
+	background-image: url("../img/img-slide2.png");
+}
+
+#btn-3:checked ~ .site-wrapper {
+	background-color: #9d8b84;
+	background-image: url("../img/img-slide3.png");
+}
