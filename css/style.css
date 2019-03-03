@@ -688,6 +688,7 @@ a {
 	position: relative;
 
 	padding-top: 321px;
+	margin-bottom: 39px;
 
 	text-align: center;
 	color: #ffffff;
@@ -717,9 +718,9 @@ a {
 
 .slider-item .button {
 	display: inline-block;
-	padding: 12px 44px;
+	padding: 12px 40px;
 
-	font-weight: 600;
+	font-weight: bold;
 	font-size: 32px;
 	line-height: 44px;
 	text-align: center;
@@ -800,4 +801,99 @@ a {
 #btn-3:checked ~ .site-wrapper {
 	background-color: #9d8b84;
 	background-image: url("../img/img-slide3.png");
+}
+
+/*Промо блок*/
+.promo-blocks {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.promo-item {
+	width: 560px;
+	min-height: 229px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	align-self: stretch;
+}
+
+.promo-item h3 {
+	/*display: inline-block;*/
+	margin: 0;
+	padding: 0;
+	padding-top: 16px;
+	padding-bottom: 15px;
+	padding-left: 19px;
+	/*margin-bottom: 15px;*/
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: bold;
+}
+
+.promo-item p {
+	/*display: inline-block;*/
+	margin: 0;
+	padding: 0;
+	padding-bottom: 43px;
+	padding-left: 20px;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: bold;
+}
+
+.promo-item .button {
+	/*display: inline-block;*/
+	padding: 12px 22px;
+	margin-left: auto;
+	margin-right: 21px;
+
+	/*font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;*/
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-decoration: none;
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+	background: rgba(172, 16, 0, 0.64);
+	background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+	border-radius: 50px;
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	border: none;
+
+	cursor: pointer;
+}
+
+.promo-raspberries p {
+	width: 512px;
+}
+
+.promo-raspberries {
+	background-image: url("../img/promo-raspberries.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.promo-chocolate {
+	background-image: url("../img/promo-chocolate.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.promo-item .button:hover {
+	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.promo-item .button:active {
+	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
