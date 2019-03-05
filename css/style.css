@@ -579,12 +579,26 @@ a {
 	line-height: 24px;
 	font-weight: bold;
 	color: #fefefe;
-	border-radius: 20px;
+	border-radius: 50px;
 	
+	text-decoration: none;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-	background-color: #ac1000;
-	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	background: rgba(172, 16, 0, 0.64);
 	background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	
+	border: none;
+	cursor: pointer;
+}
+
+.user-data .login-button:hover {
+	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.user-data .login-button:active {
+	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .login-button {
@@ -1070,7 +1084,7 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 	
-	background-image: url("../img/biscuit-fone.png");
+	background-image: url("../img/biscuit-fon.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -1102,6 +1116,7 @@ a {
 	flex-wrap: wrap;
 	align-items: flex-start;
 	align-content: flex-start;
+	margin-bottom: 40px;
 }
 
 .left-column {
@@ -1178,4 +1193,155 @@ a {
 	background-image: url("../img/delivery-icon.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}
+
+/*Блок полезной информации для пользователей*/
+.information-users {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 40px;
+}
+
+.blog-news {
+	width: 560px;
+	min-height: 220px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	align-self: stretch;
+	border-radius: 15px;
+}
+
+.blog-news-title {
+	/*display: inline-block;*/
+	margin: 0;
+	padding: 0;
+	padding-top: 22px;
+	padding-bottom: 3px;
+	padding-left: 20px;
+	/*margin-bottom: 15px;*/
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	color: #323232;
+}
+
+.link-article {
+	/*display: inline-block;*/
+	margin: 0;
+	padding: 0;
+	width: 281px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+.link-article a {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 800;
+	color: #323232;
+	text-decoration: underline;
+}
+
+.blog-news {
+	background: #f8f7f4;
+	background-image: url("../img/blog-news-fon.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.subscription {
+	width: 560px;
+	min-height: 220px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	align-self: stretch;
+	border-radius: 15px;
+	
+	background: #83b7f1;
+	background-image: url("../img/subscription-fon.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.wrap-container {
+	width: 549px;
+	min-height: 211px;
+	margin: auto;
+	border-radius: 15px;
+	
+	background: #f8f7f4;
+}
+
+.description {
+	/*display: inline-block;*/
+	margin: 0;
+	padding: 0;
+	width: 506px;
+	padding-top: 29px;
+	padding-bottom: 36px;
+	padding-left: 21px;
+	
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #5a5a5a;
+}
+
+.email {
+	margin-left: 19px;
+	padding-left: 15px;
+	margin-right: 9px;
+	width: 368px;
+	height: 44px;
+	
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	
+	box-sizing: border-box;
+	border-radius: 5px;
+	border-color: #d3d3d2;
+}
+
+.subscription-form .button {
+	display: inline-block;
+	padding: 10px 19px;
+	margin-top: -3px;
+	/*margin-left: auto;
+	margin-right: 21px;*/
+
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-decoration: none;
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+	background: rgba(172, 16, 0, 0.64);
+	background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+	border-radius: 50px;
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	border: none;
+
+	cursor: pointer;
+}
+
+.subscription-button:hover {
+	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.subscription-button:active {
+	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
