@@ -1060,9 +1060,122 @@ a {
 }
 
 .popular-items {
-	margin-bottom: 65px;
+	margin-bottom: 39px;
 }
 
+/*Блок о преимуществах компании*/
+.company-advantage {
+	width: 1146px;
+	min-height: 306px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-image: url("../img/biscuit-fone.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 
+.company-title {
+	margin: 0;
+	margin-left: 21px;
+	padding-top: 25px;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 30px;
+	color: #323232;
+}
 
+.advantage {
+	margin: 0;
+	padding: 0;
+	
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #323232;
+	
+	list-style: none;
+}
 
+.company-advantage {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.left-column {
+	display: flex;
+	flex-wrap: wrap;
+	width: 476px;
+	padding-left: 76px;
+}
+
+.right-column {
+	display: flex;
+	flex-wrap: wrap;
+	width: 470px;
+	padding-left: 91px;
+}
+
+.advantage li:first-child {
+	margin-top: 21px;
+	margin-bottom: 22px;
+}
+
+.advantage li {
+	position: relative;
+}
+
+.manufacturing::before {
+	content: "";
+	position: absolute;
+	top: -13px;
+	left: -56px;
+	width: 49px;
+	height: 49px;
+	
+	background-image: url("../img/manufacturing-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	/*z-index: 10;*/
+}
+
+.eco-raw::before {
+	content: "";
+	position: absolute;
+	top: -13px;
+	left: -56px;
+	width: 49px;
+	height: 49px;
+	
+	background-image: url("../img/eco-raw-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.purchase::before {
+	content: "";
+	position: absolute;
+	top: -13px;
+	left: -58px;
+	width: 49px;
+	height: 49px;
+	
+	background-image: url("../img/purchase-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.delivery::before {
+	content: "";
+	position: absolute;
+	top: -13px;
+	left: -58px;
+	width: 49px;
+	height: 49px;
+	
+	background-image: url("../img/delivery-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
