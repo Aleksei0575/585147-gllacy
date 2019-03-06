@@ -1373,6 +1373,13 @@ a {
 	background-position: 0 0;
 }
 
+.contact-block iframe {
+	position: absolute;
+	z-index: 10;
+
+	border: none;
+}
+
 /*Блок контактной информации*/
 .contact-information {
 	position: absolute;
