@@ -1196,6 +1196,7 @@ a {
 }
 
 /*Блок полезной информации для пользователей*/
+/*Блог*/
 .information-users {
 	display: flex;
 	justify-content: space-between;
@@ -1254,6 +1255,7 @@ a {
 	background-position: 0 0;
 }
 
+/*Блок подписки*/
 .subscription {
 	width: 560px;
 	min-height: 220px;
@@ -1345,3 +1347,130 @@ a {
 	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
+
+/*Блок с картой и контактами*/
+.contact-block {
+	position: relative;
+	padding: 0;
+	width: 1200px;
+	height: 430px;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: #e9e1c2;
+}
+
+/*Маркер на карте*/
+.contact-block::before {
+	content: "";
+	position: absolute;
+	top: 138px;
+	left: 266px;
+	width: 80px;
+	height: 140px;
+	
+	background-image: url("../img/marker.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+/*Блок контактной информации*/
+.contact-information {
+	position: absolute;
+	top: 62px;
+	right: 27px;
+	width: 302px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	
+	font-size: 14px;
+	line-height: 20px;
+	color: #323232;
+}
+
+.info-phone a {
+	color: #323232;
+}
+
+.contact-information p {
+	margin: 0;
+}
+
+.address {
+	width: 148px;
+	padding-top: 29px;
+	padding-left: 25px;
+	padding-bottom: 1px;
+}
+
+.address-bold {
+	display: block;
+	width: 221px;
+	padding-left: 25px;
+	padding-bottom: 18px;
+	
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.phone {
+	width: 172px;
+	padding-left: 25px;
+	padding-bottom: 4px;
+}
+
+.info-phone {
+	display: block;
+	width: 153px;
+	padding-left: 25px;
+	padding-bottom: 1px;
+}
+ 
+.info-phone a {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.time {
+	width: 153px;
+	padding-left: 25px;
+	padding-bottom: 23px;
+	
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.contact-block .button {
+	display: inline-block;
+	padding: 10px 28px;
+	margin-left: 25px;
+	margin-right: auto;
+	margin-bottom: 30px;
+
+	/*font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;*/
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-decoration: none;
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+	background: rgba(172, 16, 0, 0.64);
+	background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+	border-radius: 50px;
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	border: none;
+
+	cursor: pointer;
+}
+
+.contact-block .button:hover {
+	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.contact-block .button:active {
+	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
