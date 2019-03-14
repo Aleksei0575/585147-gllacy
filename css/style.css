@@ -1105,7 +1105,7 @@ a {
 }
 
 .popular-items {
-	margin-bottom: 80px;
+	margin-bottom: 48px;
 }
 
 /*Блок о преимуществах компании*/
@@ -1873,6 +1873,93 @@ a {
 	border: 2px solid #ffffff;
 
 	cursor: pointer;
+}
+
+/*Пагинатор*/
+
+.paginator-items {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	
+	display: flex;
+	justify-content: flex-end;
+	
+	list-style: none;
+}
+
+.paginator-items li:first-child {
+	margin-right: 10px;
+}
+
+.paginator-items li:first-child::before {
+	position: absolute;
+	top: 2px;
+	right: 182px;
+	content: "";
+	background-image: url("../img/icon-left-small.png");
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 12px;
+}
+
+.active-page {
+	padding-top: 5px;
+	padding-right: 9px;
+	padding-bottom: 2px;
+	padding-left: 9px;
+
+	border-radius: 50px;
+
+	color: #000000;
+	text-align: center;
+
+	background-color: #ffffff;
+}
+
+.paginator-items li:nth-child(2) {
+	margin-right: 20px;
+}
+
+.paginator-items li:nth-child(3) {
+	margin-right: 20px;
+}
+
+.paginator-items li:nth-child(4) {
+	margin-right: 20px;
+}
+
+.paginator-items li:last-child {
+	margin-right: 33px;
+}
+
+.paginator-items li:last-child::after {
+	position: absolute;
+	top: 2px;
+	right: 1px;
+	content: "";
+	background-image: url("../img/icon-right-small.png");
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 12px;
+}
+
+.paginator-item {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.pagination {
+	margin-bottom: 32px;
+}
+
+.pagination-line {
+	width: 100%;
+	/*margin-bottom: 2px;*/
+	
+	height: 1px;
+	background: rgba(255, 255, 255, 0.2);;
 }
 
 /*Футер */
