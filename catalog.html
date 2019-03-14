@@ -111,14 +111,14 @@
 					<div class="cart">
 						<ul class="cart-item">
 							<li class="user-cart btn-cart"><!--Корзина-->
-								<a href="#" aria-label="Корзина товаров">
+								<a class="items-cart" href="#" aria-label="Корзина товаров">
 									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-										<g fill="#FFF">
-											<path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
-											<circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/>
-										</g>
+										<path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
+										<circle cx="6.984" cy="18" r="2" fill="#343434"/>
+										<circle cx="15.984" cy="18" r="2" fill="#343434"/>
+										<path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
 									</svg>
-									Пусто
+									2 товара
 								</a>
 							</li>
 						</ul>
@@ -136,9 +136,15 @@
 			<main>
 				<div class="container">
 					<ul class="breadcrumbs">
-						<li><a href="#">Главная</a></li>
-						<li><a href="#">Каталог</a></li>
-						<li>Сливочное</li>
+						<li>
+							<a href="#">Главная</a>
+							<span class="to-right">&raquo;</span>
+						</li>
+						<li>
+							<a href="#">Каталог</a>
+							<span class="to-right">&raquo;</span>
+						</li>
+						<li class="current-item">Сливочное</li>
 					</ul>
 					<div class="title">
 						<h1 class="page-title">Сливочное мороженое
@@ -149,7 +155,7 @@
 					<section class="filter-block" aria-label="Блок фильтра для выбора мороженного">
 						<h2 class="visually-hidden">Выбор сливочного мороженного</h2>
 						<form class="filter" method="GET" action="https://echo.htmlacademy.ru" aria-label="Форма с фильтром">
-							<fieldset class="filter-item">
+							<fieldset class="filter-item item-sort">
 								<legend class="sort">Сортировка:</legend>
 								<select name="sort-variant">
 									<option value="popular">по популярности
@@ -162,7 +168,7 @@
 									</option>
 								</select>
 							</fieldset>
-							<fieldset class="filter-item price">
+							<fieldset class="filter-item item-price">
 								<legend class="price">Цена: 100 руб. – 500 руб.</legend>
 								<div class="range-controls">
 									<div class="scale">
@@ -172,15 +178,15 @@
 									<div class="toggle toggle-max" aria-label="Максимальная цена" tabindex="0"></div>
 								</div>
 							</fieldset>
-							<fieldset class="filter-item">
+							<fieldset class="filter-item item-fat">
 								<legend class="fat-content">Жирность:</legend>
-								<ul>
+								<ul class="fat-items">
 									<li class="fat-content-item">
 										<input class="filter-input filter-input-radio visually-hidden" type="radio" name="fat" value="0%" id="fat-0">
 										<label class="radio-off" for="fat-0">0%</label>
 									</li>
 									<li class="fat-content-item">
-										<input class="filter-input filter-input-radio visually-hidden" type="radio" name="fat" value="до 10%" id="fat-10" checked>
+										<input class="filter-input filter-input-radio visually-hidden" type="radio" name="fat" value="до 10%" id="fat-10" checked disabled>
 										<label class="radio-on" for="fat-10">до 10%</label>
 									</li>
 									<li class="fat-content-item">
@@ -193,11 +199,11 @@
 									</li>
 								</ul>
 							</fieldset>
-							<fieldset class="filter-item">
+							<fieldset class="filter-item item-fillers">
 								<legend class="fillers">Наполнители:</legend>
-								<ul>
+								<ul class="fillers-items">
 									<li class="fillers-item">
-										<input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="chocolate" value="chocolate" id="chocolate" checked>
+										<input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="chocolate" value="chocolate" id="chocolate" checked disabled>
 										<label class="checkbox-on" for="chocolate">шоколадные</label>
 									</li>
 									<li class="fillers-item">
@@ -214,13 +220,14 @@
 									</li>
 									<li class="fillers-item">
 										<input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="jams" value="jams" id="jams">
-										<label class="checkbox-off" for="jams">сиропы</label>
+										<label class="checkbox-off" for="jams">джемы</label>
 									</li>
 								</ul>
-								<button type="submit" class="filter-button button">
-									Применить
-								</button>
+								
 							</fieldset>
+							<button type="submit" class="filter-button button">
+								Применить
+							</button>
 
 						</form>
 					</section>
