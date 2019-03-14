@@ -947,6 +947,14 @@ a {
 	list-style: none;
 }
 
+/*.hits-item {
+	margin-right: 19px;
+}*/
+
+.inner-page .hits-item {
+	margin-bottom: 39px;
+}
+
 .hits-item {
 	position: relative;
 	width: 267px;
@@ -1013,6 +1021,10 @@ a {
 
 .hits-item:nth-child(4) h3 {
 	min-width: 191px;
+}
+
+.hits-item:nth-child(6) h3 {
+	min-width: 255px;
 }
 
 .hits-item-price {
@@ -1093,7 +1105,7 @@ a {
 }
 
 .popular-items {
-	margin-bottom: 39px;
+	margin-bottom: 80px;
 }
 
 /*Блок о преимуществах компании*/
@@ -1581,7 +1593,7 @@ a {
 	border-radius: 50px;
 	text-align: center;
 	vertical-align: middle;
-	background: rgba(255, 255, 255, 0.2);
+	background: #a9bab0;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
