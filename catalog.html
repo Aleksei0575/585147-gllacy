@@ -122,6 +122,37 @@
 									</svg>
 									2 товара
 								</a>
+								<div class="user-cart__items">
+									<div class="user-cart__item">
+										<button type="button" class="user-cart__button--remove" value="Закрыть" aria-label="Убрать из корзины">
+											<span>Убрать из корзины</span>
+										</button>
+										<img src="img/cart-img-1.png" width="33" height="33" alt="Изображение товара">
+										<p class="user-cart__item_description">Пломбир с апельсиновым джемом</p>
+										<p class="user-cart__item_value">
+											1,5 кг х 
+											<span>200 руб.</span>
+										</p>
+										<p class="user-cart__item_price">300 руб.</p>
+									</div>
+									<div class="user-cart__item">
+										<button type="button" class="user-cart__button--remove" value="Закрыть" aria-label="Убрать из корзины">
+											<span>Убрать из корзины</span>
+										</button>
+										<img src="img/cart-img-2.png" width="33" height="33" alt="Изображение товара">
+										<p class="user-cart__item_description">Клубничный пломбир с присыпкой из белого шоколада</p>
+										<p class="user-cart__item_value">
+											1,5 кг х 
+											<span>300 руб.</span>
+										</p>
+										<p class="user-cart__item_price">450 руб.</p>
+									</div>
+									<div class="user-cart__line"></div>
+									<div class="user-cart__total-price">
+										<span>Итого: 750 руб.</span>
+										<a class="button user-cart__button" href="#">Оформить заказ</a>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -235,7 +266,7 @@
 					</section>
 					<!-- Блок каталога товаров -->
 					<section class="popular-items">
-						<h2 class="visually-hidden">Топ-список хитов продаж!</h2>
+						<h2 class="visually-hidden">Выбор сливочного мороженного</h2>
 						<ul class="top-list">
 					<!-- Мороженное №1 -->
 							<li class="hits-item">
@@ -243,7 +274,7 @@
 							
 								<a href="catalog.html">
 									<p class="hits-image">
-										<img src="img/product-1.png" width="267" height="267" alt="Сливочное мороженное с апельсиновым джемом и цитрусовой стружкой">
+										<img src="img/product-1.png" width="267" height="267" alt="Изображение мороженного">
 									</p>
 									<h3 class="hits-item-title">
 										Сливочное с апельсиновым джемом и цитрусовой стружкой
@@ -263,7 +294,7 @@
 							<!-- <div class="flag flag-hit" aria-label="Хит продаж"></div> -->
 								<a href="catalog.html">
 									<p class="hits-image">
-										<img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное мороженное с кусочками шоколада">
+										<img src="img/product-2.png" width="267" height="267" alt="Изображение мороженного">
 									</p>
 									<h3 class="hits-item-title">
 										Сливочно-кофейное с кусочками шоколада
@@ -283,7 +314,7 @@
 							<!-- <div class="flag flag-hit" aria-label="Хит продаж"></div> -->
 								<a href="catalog.html">
 									<p class="hits-image">
-										<img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное мороженное с присыпкой из белого шоколада">
+										<img src="img/product-3.png" width="267" height="267" alt="Изображение мороженного">
 									</p>
 									<h3 class="hits-item-title">
 										Сливочно-клубничное с присыпкой из белого шоколада
@@ -303,7 +334,7 @@
 							<!-- <div class="flag flag-hit" aria-label="Хит продаж"></div> -->
 								<a href="catalog.html">
 									<p class="hits-image">
-										<img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+										<img src="img/product-4.png" width="267" height="267" alt="Изображение мороженного">
 									</p>
 									<h3 class="hits-item-title">
 										Сливочное крем-брюле с карамельной подливкой
@@ -323,14 +354,14 @@
 							<!-- <div class="flag flag-hit" aria-label="Хит продаж"></div> -->
 								<a href="catalog.html">
 									<p class="hits-image">
-										<img src="img/product-5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
+										<img src="img/product-5.png" width="267" height="267" alt="Изображение мороженного">
 									</p>
 									<h3 class="hits-item-title">
 										Сливочное с брусничным джемом
 									</h3>
 								</a>
 								<div class="hits-item-price">
-									<b class="price-item" aria-label="Цена сливочного крем-брюле">325&#8381;</b>
+									<b class="price-item" aria-label="Цена сливочного мороженного с брусничным джемом">325&#8381;</b>
 									<span>/кг</span>
 								</div>
 								<div class="quick-link">
@@ -343,14 +374,14 @@
 							<!-- <div class="flag flag-hit" aria-label="Хит продаж"></div> -->
 								<a href="catalog.html">
 									<p class="hits-image">
-										<img src="img/product-6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+										<img src="img/product-6.png" width="267" height="267" alt="Изображение мороженного">
 									</p>
 									<h3 class="hits-item-title">
 										Сливочно-черничное с цельными ягодами черники
 									</h3>
 								</a>
 								<div class="hits-item-price">
-									<b class="price-item" aria-label="Цена сливочного крем-брюле">410&#8381;</b>
+									<b class="price-item" aria-label="Цена сливочно-черничного мороженного">410&#8381;</b>
 									<span>/кг</span>
 								</div>
 								<div class="quick-link">
@@ -363,14 +394,14 @@
 							<!-- <div class="flag flag-hit" aria-label="Хит продаж"></div> -->
 								<a href="catalog.html">
 									<p class="hits-image">
-										<img src="img/product-7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+										<img src="img/product-7.png" width="267" height="267" alt="Изображение мороженного">
 									</p>
 									<h3 class="hits-item-title">
 										Сливочно-лимонное с карамельной присыпкой
 									</h3>
 								</a>
 								<div class="hits-item-price">
-									<b class="price-item" aria-label="Цена сливочного крем-брюле">375&#8381;</b>
+									<b class="price-item" aria-label="Цена сливочно-лимонного мороженного">375&#8381;</b>
 									<span>/кг</span>
 								</div>
 								<div class="quick-link">
@@ -383,14 +414,14 @@
 							<!-- <div class="flag flag-hit" aria-label="Хит продаж"></div> -->
 								<a href="catalog.html">
 									<p class="hits-image">
-										<img src="img/product-8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+										<img src="img/product-8.png" width="267" height="267" alt="Изображение мороженного">
 									</p>
 									<h3 class="hits-item-title">
 										Сливочное с шоколадной стружкой
 									</h3>
 								</a>
 								<div class="hits-item-price">
-									<b class="price-item" aria-label="Цена сливочного крем-брюле">320&#8381;</b>
+									<b class="price-item" aria-label="Цена сливочного мороженного с шлколадной стружкой">320&#8381;</b>
 									<span>/кг</span>
 								</div>
 								<div class="quick-link">
@@ -403,14 +434,14 @@
 							<!-- <div class="flag flag-hit" aria-label="Хит продаж"></div> -->
 								<a href="catalog.html">
 									<p class="hits-image">
-										<img src="img/product-9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+										<img src="img/product-9.png" width="267" height="267" alt="Изображение мороженного">
 									</p>
 									<h3 class="hits-item-title">
 										Сливочно-ванильное с кусочками шоколада
 									</h3>
 								</a>
 								<div class="hits-item-price">
-									<b class="price-item" aria-label="Цена сливочного крем-брюле">440&#8381;</b>
+									<b class="price-item" aria-label="Цена сливочно-ванильного мороженного">440&#8381;</b>
 									<span>/кг</span>
 								</div>
 								<div class="quick-link">
@@ -423,14 +454,14 @@
 							<!-- <div class="flag flag-hit" aria-label="Хит продаж"></div> -->
 								<a href="catalog.html">
 									<p class="hits-image">
-										<img src="img/product-10.png" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
+										<img src="img/product-10.png" width="267" height="267" alt="Изображение мороженного">
 									</p>
 									<h3 class="hits-item-title">
 										Сливочноe с ментоловым сиропом
 									</h3>
 								</a>
 								<div class="hits-item-price">
-									<b class="price-item" aria-label="Цена сливочного крем-брюле">435&#8381;</b>
+									<b class="price-item" aria-label="Цена сливочного мороженного с ментоловым сиропом">435&#8381;</b>
 									<span>/кг</span>
 								</div>
 								<div class="quick-link">
@@ -443,14 +474,14 @@
 							<!-- <div class="flag flag-hit" aria-label="Хит продаж"></div> -->
 								<a href="catalog.html">
 									<p class="hits-image">
-										<img src="img/product-11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+										<img src="img/product-11.png" width="267" height="267" alt="Изображение мороженного">
 									</p>
 									<h3 class="hits-item-title">
 										Сливочное с кусочками черного шоколада
 									</h3>
 								</a>
 								<div class="hits-item-price">
-									<b class="price-item" aria-label="Цена сливочного крем-брюле">355&#8381;</b>
+									<b class="price-item" aria-label="Цена сливочного мооженного с кусочками черного шоколада">355&#8381;</b>
 									<span>/кг</span>
 								</div>
 								<div class="quick-link">
@@ -463,14 +494,14 @@
 							<!-- <div class="flag flag-hit" aria-label="Хит продаж"></div> -->
 								<a href="catalog.html">
 									<p class="hits-image">
-										<img src="img/product-12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
+										<img src="img/product-12.png" width="267" height="267" alt="Изображение мороженного">
 									</p>
 									<h3 class="hits-item-title">
 										Сливочное с мятным сиропом
 									</h3>
 								</a>
 								<div class="hits-item-price">
-									<b class="price-item" aria-label="Цена сливочного крем-брюле">420&#8381;</b>
+									<b class="price-item" aria-label="Цена сливочного мороженного с мятным сиропом">420&#8381;</b>
 									<span>/кг</span>
 								</div>
 								<div class="quick-link">
@@ -568,9 +599,12 @@
 			<button class="modal-close" type="button" value="Закрыть">
 				<span>Закрыть</span>
 			</button>
-		 --></div>
+		 -->
 
 	</body>
 </html>
+
+
+
 
 
